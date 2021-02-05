@@ -150,7 +150,7 @@ body{
     width: 1110px;
     display: flex;
     justify-content: space-between;
-    margin: 127px auto 75px;
+    margin: 127px auto 64px;
     justify-items: center;
   }
   .header{
