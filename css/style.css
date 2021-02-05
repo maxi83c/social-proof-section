@@ -14,6 +14,7 @@ body{
   margin: 0;
   background-image: url(../images/bg-pattern-top-mobile.svg), url(../images/bg-pattern-bottom-mobile.svg);
   background-position: top, bottom;
+  background-size: 100% 232px, 100% 503px;
   background-repeat: no-repeat;
 }
 
@@ -28,11 +29,14 @@ body{
 }
 
 .header__subtitle{
-  color: var(--very-dark-magenta);
+  color: var(--dark-grayish-magenta);
   font-weight: 500;
   font-size: 10pt;
 }
 
+.rates{
+  margin-bottom: 50px;
+}
 .rated{
   width: 326px;
   height: 77px;
@@ -98,10 +102,104 @@ body{
   padding: 0;
   margin: 28px 0 0;
   line-height: 20px;
+  min-width: 275px;
 }
 
 .attribution{
   width: 100%;
   font-size: 10px;
   text-align: center;
+  margin-top: 88px;
+}
+
+@media (min-width: 500px) {
+  .rated{
+    width: 446px;
+    height: 57px;
+    padding-top: 13px;
+    padding-left: 30px;
+    text-align: left;
+  }
+ 
+  .rated__text{
+    color: var(--very-dark-magenta);
+    display: inline-block;
+    margin-left: 20px;
+  }
+
+  .testimonial{
+    width: 350px;
+    height: 235px;
+  }
+
+  .testimonial__text{
+    min-width: 298px;
+  }
+}
+
+@media (min-width: 1200px) {
+
+  body{
+    background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
+    background-position: top left, bottom right;
+    background-size: auto, auto;
+  }
+
+  .container{
+    width: 1110px;
+    display: flex;
+    justify-content: space-between;
+    margin: 127px auto 75px;
+    justify-items: center;
+  }
+  .header{
+    width: 500px;
+    height: 250px;
+    margin: 0;
+    text-align: left;
+  }
+
+  .header__title{
+    font-size: 30pt;
+    width: 365px;
+  }
+  .header__subtitle{
+    font-size: 12pt;
+    margin: 0;
+  }
+
+  .testimonials{
+    display: flex;
+    width: 1110px;
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .rates{
+    width: 540px;
+    padding-top: 40px;
+    margin: 0;
+  }
+
+  .rated{
+    margin-left: 0;
+  }
+  .rated--second{
+    margin-left: 48px;
+  }
+
+  .rated--third{
+   margin-left: 96px;
+  }
+
+  .testimonial{
+    margin: 0;
+  }
+
+  .testimonial--second{
+   margin-top: 16px;
+  }
+  .testimonial--third{
+    margin-top: 32px;
+  }
 }
