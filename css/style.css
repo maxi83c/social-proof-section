@@ -125,6 +125,7 @@ body{
     color: var(--very-dark-magenta);
     display: inline-block;
     margin-left: 20px;
+    font-size: 12pt;
   }
 
   .testimonial{
@@ -160,8 +161,10 @@ body{
   }
 
   .header__title{
-    font-size: 30pt;
-    width: 365px;
+    font-size: 35pt;
+    width: 500px;
+    margin: 0 0 15px;
+    line-height: 50px;
   }
   .header__subtitle{
     font-size: 12pt;
