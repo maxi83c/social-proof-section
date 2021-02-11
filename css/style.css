@@ -138,7 +138,7 @@ body{
   }
 }
 
-@media (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
   body{
     background-image: url(../images/bg-pattern-top-desktop.svg), url(../images/bg-pattern-bottom-desktop.svg);
@@ -189,11 +189,22 @@ body{
   .rated{
     margin-left: 0;
   }
-  .rated--second{
+
+  .rated__text{
+    font-size: 9pt;
+    margin-top: 0;
+    line-height: 0;
+  }
+
+  .rated__star{
+    margin: 5px 2px 0;
+  }
+
+  .rated:nth-child(2){
     margin-left: 48px;
   }
 
-  .rated--third{
+  .rated:last-of-type{
    margin-left: 96px;
   }
 
@@ -201,10 +212,10 @@ body{
     margin: 0;
   }
 
-  .testimonial--second{
+  .testimonial:nth-child(2){
    margin-top: 16px;
   }
-  .testimonial--third{
+  .testimonial:last-of-type{
     margin-top: 32px;
   }
 
